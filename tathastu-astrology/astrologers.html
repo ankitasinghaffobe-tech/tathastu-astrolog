@@ -1,1 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directory of Advisory Counsel | Tathastu Astrology</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <nav class="celestial-nav">
+        <a href="index.html" class="nav-brand"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--accent-gold);"><path d="M12 2v20M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>TATHASTU</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="astrologers.html" style="color: var(--accent-gold);">Astrologers</a></li>
+            <li><a href="horoscope.html">Horoscope</a></li>
+            <li><a href="kundli.html">Kundli</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="nav-auth-btn" onclick="window.location.href='login.html'">Portal Access</button>
+    </nav>
 
+    <main class="page-container">
+        <section class="section-header">
+            <h2>Advisory Counsel Directory</h2>
+            <p>Connect with accredited specialists in Vedic systems, structural chart synthesis, and spatial predictive calculations.</p>
+        </section>
+
+        <div class="glass-panel directory-controls">
+            <input type="text" id="dirSearch" class="search-input" placeholder="Search by name or specialty focus...">
+            <select id="dirExpertise" class="filter-select">
+                <option value="all">All Fields of Expertise</option>
+                <option value="vedic">Vedic Chart Mechanics</option>
+                <option value="financial">Financial Cosmology</option>
+                <option value="synastry">Synastry & Kinship Systems</option>
+            </select>
+            <select id="dirSort" class="filter-select">
+                <option value="exp">Sort by Experience (High-Low)</option>
+                <option value="fee">Sort by Retainer (Low-High)</option>
+            </select>
+        </div>
+
+        <div class="astrologers-grid" id="astrologerGridContainer">
+            </div>
+    </main>
+
+    <div class="modal-overlay" id="bookingModal">
+        <div class="glass-panel modal-surface">
+            <h3>Secure Consultation Matrix Block</h3>
+            <p style="color:var(--text-muted); margin: 15px 0;" id="bookingTargetName"></p>
+            <div class="input-block" style="margin-bottom:20px;">
+                <label>Target Execution Date</label>
+                <input type="date" style="background:rgba(255,255,255,0.05); color:white; border:1px solid var(--accent-gold); padding:10px;">
+            </div>
+            <div style="display:flex; gap:15px; justify-content:flex-end;">
+                <button class="btn-outline" onclick="document.getElementById('bookingModal').style.display='none'">Abort</button>
+                <button class="btn-gold" onclick="alert('Session reservation confirmed within pipeline.'); document.getElementById('bookingModal').style.display='none'">Confirm Reservation</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="cosmic-footer">
+        <div class="footer-layout">
+            <div class="footer-info-block">
+                <h3 class="nav-brand" style="padding-left:0;">TATHASTU</h3>
+                <p>Sovereign cosmic intelligence engine translating timeless geometric planetary maps into actionable personal trajectory vectors.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/app.js"></script>
+    <script>
+        // Execution sequence initializing directory state engines
+        document.addEventListener('DOMContentLoaded', () => {
+            if(typeof window.initializeAstrologerDirectory === 'function') {
+                window.initializeAstrologerDirectory();
+            }
+        });
+    </script>
+</body>
+</html>

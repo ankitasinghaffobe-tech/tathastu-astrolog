@@ -1,1 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retainer Tiers | Tathastu Astrology</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .pricing-grid-matrix { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin: 40px 0; }
+        .tier-highlight { border-color: var(--accent-gold) !important; box-shadow: var(--gold-glow) !important; position: relative; }
+        .badge-premium { position: absolute; top: -15px; right: 20px; background: var(--accent-gold); color: var(--bg-space); font-weight:700; text-transform:uppercase; font-size:0.75rem; padding: 4px 12px; border-radius:4px; }
+    </style>
+</head>
+<body>
+    <nav class="celestial-nav">
+        <a href="index.html" class="nav-brand"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--accent-gold);"><path d="M12 2v20M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>TATHASTU</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="astrologers.html">Astrologers</a></li><li><a href="horoscope.html">Horoscope</a></li><li><a href="kundli.html">Kundli</a></li><li><a href="blog.html">Blog</a></li>
+            <li><a href="pricing.html" style="color: var(--accent-gold);">Pricing</a></li><li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="nav-auth-btn" onclick="window.location.href='login.html'">Portal Access</button>
+    </nav>
 
+    <main class="page-container">
+        <section class="section-header">
+            <h2>Retainer Resource Matrices</h2>
+            <p>Select a transactional service scope tailored to your operational trajectory requirements.</p>
+        </section>
+
+        <div class="pricing-grid-matrix">
+            <div class="service-card glass-panel">
+                <h3>Basic Computation Block</h3>
+                <div class="service-price" style="font-size:3rem; margin:20px 0;">$89<span style="font-size:1rem; color:var(--text-muted);">/chart</span></div>
+                <p>Standard data outputs for self-directed processing pipelines.</p>
+                <ul class="service-features-list" style="text-align:left;">
+                    <li>Natal D-1 structural layout charts</li>
+                    <li>Core placement coordinate tables</li>
+                    <li>Digital processing access tokens</li>
+                </ul>
+                <button class="btn-outline" style="width:100%; margin-top:20px;" onclick="window.location.href='kundli.html'">Deploy Engine</button>
+            </div>
+
+            <div class="service-card glass-panel tier-highlight">
+                <div class="badge-premium">Most Selected</div>
+                <h3>Strategic Advisor Retainer</h3>
+                <div class="service-price" style="font-size:3rem; margin:20px 0;">$249<span style="font-size:1rem; color:var(--text-muted);">/mo</span></div>
+                <p>Ongoing monitoring designed for active individual path management.</p>
+                <ul class="service-features-list" style="text-align:left;">
+                    <li>Bi-weekly high-fidelity tracking briefs</li>
+                    <li>Direct messaging pipeline with senior advisors</li>
+                    <li>Full planetary structural generation logs</li>
+                </ul>
+                <button class="btn-gold" style="width:100%; margin-top:20px;" onclick="window.location.href='contact.html'">Initialize Subscription</button>
+            </div>
+
+            <div class="service-card glass-panel">
+                <h3>Sovereign Elite Tier</h3>
+                <div class="service-price" style="font-size:3rem; margin:20px 0;">$999<span style="font-size:1rem; color:var(--text-muted);">/annum</span></div>
+                <p>Complete customized coverage for multi-organizational oversight.</p>
+                <ul class="service-features-list" style="text-align:left;">
+                    <li>All services included without limitations</li>
+                    <li>24/7 dedicated alert communication line</li>
+                    <li>Custom coordinate modeling matrices</li>
+                </ul>
+                <button class="btn-outline" style="width:100%; margin-top:20px;" onclick="window.location.href='contact.html'">Request Onboarding</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="cosmic-footer">
+        <div class="footer-copyright">&copy; 2026 Tathastu Astrology. All properties secured.</div>
+    </footer>
+</body>
+</html>

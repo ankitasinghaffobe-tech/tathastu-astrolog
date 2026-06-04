@@ -1,1 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vedic Chart Engine | Tathastu Astrology</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <nav class="celestial-nav">
+        <a href="index.html" class="nav-brand"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--accent-gold);"><path d="M12 2v20M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>TATHASTU</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="astrologers.html">Astrologers</a></li><li><a href="horoscope.html">Horoscope</a></li>
+            <li><a href="kundli.html" style="color: var(--accent-gold);">Kundli</a></li><li><a href="blog.html">Blog</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="nav-auth-btn" onclick="window.location.href='login.html'">Portal Access</button>
+    </nav>
 
+    <main class="page-container">
+        <section class="section-header">
+            <h2>Natal Structure Matrix Engine</h2>
+            <p>Input accurate coordinate markers to isolate spatial geometry datasets at the exact moment of individual inception.</p>
+        </section>
+
+        <div class="glass-panel" style="padding: 40px; max-width: 900px; margin: 0 auto;">
+            <form id="kundliGenerationForm" onsubmit="window.processKundliEngine(event)">
+                <div class="form-layout-grid">
+                    <div class="input-block">
+                        <label>Target Identifier Name</label>
+                        <input type="text" id="kName" required placeholder="e.g. Sterling Archer">
+                    </div>
+                    <div class="input-block">
+                        <label>Date Coordinates</label>
+                        <input type="date" id="kDate" required>
+                    </div>
+                    <div class="input-block">
+                        <label>Temporal Coordinate Markers</label>
+                        <input type="time" id="kTime" required>
+                    </div>
+                    <div class="input-block">
+                        <label>Spatial Geographic Location</label>
+                        <input type="text" id="kPlace" required placeholder="e.g. New Delhi, India">
+                    </div>
+                </div>
+                <div style="text-align: center;">
+                    <button type="submit" class="btn-gold">Execute Compilation Routine</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="glass-panel report-output-box" id="kundliOutputMatrixArea">
+            <h3 style="color: var(--accent-gold); margin-bottom: 20px; font-size: 1.6rem; text-align: center;">Calculated Planimetric Coordinates</h3>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px;" id="kundliMetaDetailsBlock">
+                </div>
+            
+            <table class="report-table-data">
+                <thead>
+                    <tr>
+                        <th>Celestial Body</th>
+                        <th>Geometric Longitude</th>
+                        <th>Zodiac Domain Placement</th>
+                        <th>Nakshatra Domain</th>
+                        <th>Pada</th>
+                    </tr>
+                </thead>
+                <tbody id="kundliPlanetaryTableBody">
+                    </tbody>
+            </table>
+        </div>
+    </main>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

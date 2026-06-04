@@ -1,1 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ephemeris Trajectory Streams | Tathastu Astrology</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <nav class="celestial-nav">
+        <a href="index.html" class="nav-brand"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--accent-gold);"><path d="M12 2v20M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>TATHASTU</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="astrologers.html">Astrologers</a></li>
+            <li><a href="horoscope.html" style="color: var(--accent-gold);">Horoscope</a></li><li><a href="kundli.html">Kundli</a></li><li><a href="blog.html">Blog</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="nav-auth-btn" onclick="window.location.href='login.html'">Portal Access</button>
+    </nav>
 
+    <main class="page-container">
+        <section class="section-header">
+            <h2>Realtime Trajectory Streams</h2>
+            <p>Select your native zodiac positioning vector to isolate localized astronomical data and predictive readouts.</p>
+        </section>
+
+        <div class="zodiac-selector-grid" id="zodiacSelectorContainer">
+            </div>
+
+        <div class="glass-panel horoscope-display-panel" id="horoscopeContentPanel">
+            <h3 id="horoscopeTargetTitle" style="color: var(--accent-gold); font-size: 1.8rem; margin-bottom:15px;">Aries Tracking Core</h3>
+            <p id="horoscopeTargetContent" style="color: var(--text-light); font-size: 1.1rem; max-width:850px;">Select an operational zodiac vector block above to parse real-time mathematical streaming assessments.</p>
+        </div>
+    </main>
+
+    <footer class="cosmic-footer">
+        <div class="footer-copyright">&copy; 2026 Tathastu Astrology. All celestial properties secured.</div>
+    </footer>
+
+    <script src="assets/js/app.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            if(typeof window.initializeHoroscopeEngine === 'function') {
+                window.initializeHoroscopeEngine();
+            }
+        });
+    </script>
+</body>
+</html>

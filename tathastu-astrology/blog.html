@@ -1,1 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmological Research Hub | Tathastu Astrology</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .blog-structure-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 40px; margin-top: 40px; }
+        .blog-card-item { padding: 30px; margin-bottom: 30px; }
+        .category-pill { background: rgba(212,175,55,0.1); border:1px solid var(--accent-gold); padding:4px 12px; font-size:0.75rem; border-radius:20px; color:var(--accent-gold); text-transform:uppercase; display:inline-block; margin-bottom:15px; }
+    </style>
+</head>
+<body>
+    <nav class="celestial-nav">
+        <a href="index.html" class="nav-brand"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--accent-gold);"><path d="M12 2v20M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>TATHASTU</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="astrologers.html">Astrologers</a></li><li><a href="horoscope.html">Horoscope</a></li><li><a href="kundli.html">Kundli</a></li>
+            <li><a href="blog.html" style="color: var(--accent-gold);">Blog</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="nav-auth-btn" onclick="window.location.href='login.html'">Portal Access</button>
+    </nav>
 
+    <main class="page-container">
+        <section class="section-header">
+            <h2>The Cosmological Research Hub</h2>
+            <p>Access high-fidelity papers charting structural cycles and geometric transits across global macro timelines.</p>
+        </section>
+
+        <div class="blog-structure-grid">
+            <div id="blogPostsOutputContainer">
+                </div>
+            <div>
+                <div class="glass-panel" style="padding: 25px; position: sticky; top: 110px;">
+                    <h4>Search Framework</h4>
+                    <input type="text" id="blogSearchInput" class="search-input" placeholder="Query papers..." style="width:100%; margin: 15px 0 25px 0;">
+                    
+                    <h4 style="margin-bottom:15px;">Structural Nodes</h4>
+                    <ul style="list-style:none; display:flex; flex-direction:column; gap:10px; color:var(--text-muted); font-size:0.9rem;" id="blogCategoryListContainer">
+                        </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="assets/js/app.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            if(typeof window.initializeBlogEngine === 'function') { window.initializeBlogEngine(); }
+        });
+    </script>
+</body>
+</html>
